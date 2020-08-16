@@ -1,0 +1,11 @@
+img {
+    height: auto;
+    cursor: pointer;
+    width: 50px;
+}
+
+@media only screen and (min-width: 530px) {
+    img {
+        width: 70px;
+    }
+  }

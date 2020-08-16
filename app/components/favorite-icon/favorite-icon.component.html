@@ -1,0 +1,5 @@
+<div>
+    <img [src]="(isFavorite$ | async) ? '../../../assets/images/sun.svg' : '../../../assets/images/unsun.svg'" 
+    [title]="(isFavorite$ | async) ? 'Remove from favorites' : 'Add to favorites'"
+    (click) = "onFavoriteImgClick()">
+</div>

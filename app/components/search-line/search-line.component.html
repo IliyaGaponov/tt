@@ -1,0 +1,13 @@
+<div>
+  <form class="form-inline d-flex justify-content-center md-form form-sm active-cyan-2 mt-2">
+    <input #searchText id="typeahead-basic" class="form-control form-control-sm mr-3 w-75" 
+      type="text" placeholder="Search City" name="search"
+      [(ngModel)]="model" [ngbTypeahead]="search" (selectItem)="itemSelected($event)"
+      [resultFormatter]="resultFormatBandListValue"
+      [inputFormatter]="inputFormatBandListValue"
+      aria-label="Search">
+    <i class="fa fa-search" aria-hidden="true"></i>
+  </form>
+</div>
+
+

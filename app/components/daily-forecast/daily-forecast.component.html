@@ -1,0 +1,8 @@
+<div class="weather-grid row justify-content-center my-md-5">
+  <div class="col col-12 col-md-2 p-1" *ngFor="let day of dailyForecast">
+    <app-card [title] = 'days[day.date.getDay()]'
+              [weatherText] = 'day.weatherText'
+              [temperature] = 'day.temperature'>
+    </app-card>
+  </div>
+</div>

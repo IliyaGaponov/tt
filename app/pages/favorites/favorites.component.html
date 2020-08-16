@@ -1,0 +1,13 @@
+<div class="favorites-weather-container container  mt-md-5">
+  <div *ngIf="count > 0" class="favorites-weather-grid row justify-content-center pt-3 pt-md-5">
+    <div class="col col-12 col-md-3" *ngFor="let city of (favorites$ | async)" (click) = showCityWeather(city)>
+      <app-card [title] = 'city.weatherCard.title'
+                [weatherText] = city.weatherCard.weatherText
+                [temperature] = 'city.weatherCard.temperatureC'>
+      </app-card>
+    </div>
+  </div>
+  <div *ngIf="count === 0" class="no-favorites-msg">
+    <h1>No favorites cities yet</h1>
+  </div>
+</div>

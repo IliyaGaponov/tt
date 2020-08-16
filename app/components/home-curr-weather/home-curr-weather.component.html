@@ -1,0 +1,8 @@
+<div class="curr-weather">
+    <div class="title mb-2">{{(card$ | async)?.title}}</div>
+    <div class="weather-text mb-1">{{(card$ | async)?.weatherText}}</div>
+    <div class="temperature">{{currUnit === 'celcius' ? (card$ | async)?.temperatureC : (card$ | async)?.temperatureF}} 
+        {{currUnit === 'fahrenheit' ? '&#8457;' : '&#8451;'}}
+        <small (click) = 'changeUnit()'>{{currUnit === 'fahrenheit' ? '&#8451;' : '&#8457;'}}</small>
+    </div>
+</div>

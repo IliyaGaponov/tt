@@ -1,0 +1,16 @@
+.navbar {
+    border-bottom: 5px solid black;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    &.active {
+        background-color: #20ceb6;
+        color: white;
+    }
+}

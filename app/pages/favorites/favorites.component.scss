@@ -1,0 +1,26 @@
+.favorites-weather-container {
+    min-height: 500px;
+    box-shadow: 14px 14px 46px 0px rgb(159 150 157);
+    border-radius: 55px;
+    @media screen and (max-width:767px) {
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+.col {
+    cursor: pointer;
+}    
+
+.favorites-weather-grid {
+    margin: 20px 5%;
+}
+
+.no-favorites-msg {
+    text-align: center;
+    font-size: 2rem;
+    padding: 212px 0;
+    @media screen and (max-width: 420px) {
+        font-size: 1.5rem;
+    }
+}
